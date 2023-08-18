@@ -167,6 +167,7 @@ button:hover{
 }
 .social-links{
     text-align: center;
+    padding-bottom:20px ;
 }
 .social-links > a{
     padding: 10px;
@@ -174,6 +175,7 @@ button:hover{
     width: 50px;
     text-align:center;
     text-decoration: none;
+    
 }
 .social-links > a{
     color:cornflowerblue;
