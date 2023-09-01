@@ -166,6 +166,7 @@ button:hover{
     cursor: pointer;
 }
 .social-links{
+    padding-top: 4%;
     text-align: center;
     padding-bottom:20px ;
 }
@@ -224,7 +225,14 @@ button:hover{
     border-bottom-right-radius: 20px;
     border-top-right-radius:20px;
   }
-
+  .education ul{
+    font-size: 16px;
+  }
+  .services h4{
+    text-align: center;
+    
+    margin: 15px 15px;
+  }
 @media only screen and (max-width:1080px){
 
     nav ul{
