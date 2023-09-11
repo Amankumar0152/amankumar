@@ -82,7 +82,7 @@ header h1{
 }
 .code h3 a{
     text-decoration: none;
-    color: lightgreen;
+    color:white;
 }
 
 @media only screen and (max-width:1080px){
