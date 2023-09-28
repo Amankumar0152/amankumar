@@ -237,8 +237,8 @@ button:hover{
     border-bottom-right-radius: 20px;
     border-top-right-radius:20px;
   }
-  .education ul{
-    font-size: 16px;
+  .education{
+    font-size:14px;
   }
   .services h4{
     text-align: center;
