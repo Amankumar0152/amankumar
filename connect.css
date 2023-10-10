@@ -4,7 +4,7 @@
 }
 body{
     padding: 10px 5px;
-    background-color: pink;
+    background-color: lightgreen;
 }
 header h1{
     font-family: cursive;
@@ -80,9 +80,9 @@ header h1{
     font-weight: bold;
     font-size: 20px;
 }
-.code h3 a{
+.code h3 span{
     text-decoration: none;
-    color:white;
+    color:orchid;
 }
 
 
