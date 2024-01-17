@@ -15,6 +15,15 @@
 .fourth{
     color: #592ED1;
 }
+.learning{
+    color: lightseagreen;
+}
+.pages{
+    color: #9774C5;
+}
+.like{
+    color: #63E6BE;
+}
 .container{
     width: 100%;
     min-height: 100vh;
