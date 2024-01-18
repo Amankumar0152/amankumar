@@ -155,9 +155,7 @@ button:hover{
     display: flex;
     align-items: center;
 }
-.sidebar .controller{
-    width: 90%;
-}
+
 .sidebar p small{
     font-size: 13px;
 }
@@ -284,9 +282,7 @@ button:hover{
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    .sidebar .controller{
-        width: 77%;
-    }
+    
     .color-box{
         transform: translateX(75px);
     }
