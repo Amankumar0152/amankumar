@@ -41,7 +41,8 @@
     align-items: center;
 }
 .logo{
-    width: 75px;
+    border-radius: 50%;
+    width:75px;
     cursor: pointer;
     margin: 30px;
 }
