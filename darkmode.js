@@ -3,6 +3,8 @@ let DarkBtn = document.querySelector(".btn");
 let body = document.querySelector("body");
 let currmode = "light";
 
+let menuicon = document.querySelector(".menu-icon");
+
 DarkBtn.addEventListener("click", ()=>{
     if(currmode === "light"){
         currmode = "dark";
