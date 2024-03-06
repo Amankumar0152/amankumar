@@ -3,6 +3,14 @@
     padding: 0px;
     font-family: 'Roboto', sans-serif;
 }
+.dark{
+    background-color: #000;
+    color: white;
+}
+.light{
+    background-color: #fff;
+    color: #000;
+}
 .first{
     color:#11CC46;
 }
@@ -62,16 +70,16 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #000;
     font: 14px;
     font-weight: bold;
+    color: #9774C5;
 }
 nav ul li a:hover{
     color:#ff5ea2;
 }
 .navbar h1 a{
     text-decoration: none;
-    color: black;
+    color: #592ED1;
     font-size: 20px;
 }
 .navbar h1 a:hover{
@@ -226,7 +234,7 @@ button:hover{
 
   .footer a{
     text-decoration: none;
-    padding: 10px 10px;
+    margin: 10px;
     text-align: center;
     color:#ff3527;
     font-size:20px;
@@ -236,6 +244,10 @@ button:hover{
 
   .footer a:hover{
     color: #11CC46;
+  }
+
+  .btn{
+    margin: 10px;
   }
 @media only screen and (max-width:1080px){
 
