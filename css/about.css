@@ -67,6 +67,10 @@ footer {
     bottom: 0;
     width: 100%;
 }
+footer p a{
+    color: aliceblue;
+    text-decoration: none;
+}
 
 @media (max-width: 600px) {
     .skills {
