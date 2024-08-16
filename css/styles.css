@@ -151,6 +151,28 @@ button:hover{
     align-items: center;
     justify-content: space-between;    
 }
+.underline-effect {
+    position: relative;
+    display: inline-block;
+    text-decoration: none; /* Remove default underline */
+    padding-bottom: 2px; /* Adjust space between text and underline */
+}
+
+.underline-effect::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    left: 0;
+    bottom: 0;
+    background-color: #11CC46; /* Underline color */
+    transition: width 0.3s ease-in-out; /* Adjust the animation speed */
+}
+
+.underline-effect:hover::after {
+    width: 100%; /* Full underline on hover */
+}
+
 .about::after{
     content: '';
     width: 10px;
