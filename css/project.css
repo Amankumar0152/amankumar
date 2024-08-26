@@ -143,3 +143,9 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+@media only screen and (max-width:720px){
+  .hero {
+    background: linear-gradient(#8043E8, #044481, #a0e03f);
+  }
+}
