@@ -1,127 +1,144 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    width: 80%;
-    margin: auto;
-  }
-  
-  /* Navbar Styles */
-  nav {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 0;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .nav-links li {
-    margin-right: 20px;
-  }
-  
-  .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .logo {
-    margin: 0;
-  }
-  
-  /* Mobile Menu Styles */
-  .mobile-menu {
-    display: none;
-  }
-  
-  .menu-toggle {
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    cursor: pointer;
-  }
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Home Section Styles */
-  #home {
-    background-color: #f1f1f1;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  /* Project Section Styles */
-  .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .project {
-    background-color:lightcyan;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .features {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .features li {
-    margin-bottom: 5px;
-  }
-  
-  .price {
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  
-  .buy-btn a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    color:whitesmoke;
-    background-color:lightslategrey;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .buy-btn:hover {
-    color: greenyellow;
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-  }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 768px) {
-    .container {
-      width: 90%;
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      background-color: #333;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      z-index: 1;
-    }
-  }
-  
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(to right, #0691db, #562ec4);
+  color: white;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #8043E8, #044481, #a0e03f);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+}
+
+/* Categories Section */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 20px;
+}
+
+.category {
+  text-align: center;
+  cursor: pointer;
+}
+
+.category img {
+  width: 100px;
+  height: 100px;
+}
+
+.category h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Projects Section */
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card h3 {
+  margin: 15px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.project-card p {
+  margin: 15px;
+  color: #777;
+}
+
+.project-card button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-card button.purchase {
+  background: orangered;
+}
+
+.project-card button:hover {
+  background: #6556ED;
+}
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(to right, #0691db, #562ec4);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

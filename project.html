@@ -1,127 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sell Projects</title>
-  <link rel="stylesheet" href="css/project.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Downloads</title>
+    <link rel="stylesheet" href="css/project.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav>
-  <div class="container">
-    <h1 class="logo">Minor & major Projects </h1>
-    <div class="mobile-menu">
-      <div class="menu-toggle"></div>
-    </div>
-    
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#project-purchase=234-download">Projects</a></li>
-      <li><a href="https://www.amankumar.cloud/connect">Contact</a></li>
-      <li><a href="#term&condition">T&C</a></li>
-    </ul>
-  </div>
-</nav>
+    <!-- Header -->
+    <header>
+        <div class="logo">ProjectHub</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Home Section -->
-<section id="home">
-  <div class="container">
-    <h2>Buy for Minor & major Projects</h2>
-    <p>We offer a variety of projects for sale at less price. Check them out below!</p>
-  </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Explore, Learn, and Download Projects</h1>
+        <p>Minor and Major Projects in Various Domains</p>
+        <input type="text" placeholder="Search for projects...">
+    </section>
 
-<!-- Projects Section -->
-<section id="projects">
-  <div class="container">
-    <h2>Our Projects</h2>
-    <div class="project-list">
-      <!-- Project 1 -->
-      <div class="project">
-        <h3>A personal webpage for Class Teacher</h3>
-        <p>In this Project Show All about class Teacher and about class features, class time with subject wise,
-          download all subjects notes in PDF, in Gallery You can add Multiple Photos.
-        </p>
-        <ul class="features">
-          <li>Responsive Website ✔</li>
-          <li>Download PDF Notes ✔</li>
-          <li>Qualification Qualities etc. ✔</li>
-          <li>Gallery for Photos ✔</li>
-        </ul>
-        <p class="price">Rs.299</p>
-        <h2 class="buy-btn"><a class="buy-btn" href="https://wa.me/9565194075">Buy Project</a></h2>
-      </div>
+    <!-- Category Section -->
+    <section class="categories">
+        <div class="category" onclick="filterProjects('web')">
+            <img src="images-project/web-icon.png" alt="Web Development">
+            <h3>Web Development Projects</h3>
+        </div>
+        <div class="category" onclick="filterProjects('frontend')">
+            <img src="images-project/front-end.png" alt="Front-End Development">
+            <h3>Front-End Project</h3>
+        </div>
+        <div class="category" onclick="filterProjects('backend')">
+            <img src="images-project/Spring-icon.png" alt="Back-End Development">
+            <h3>Back-End Projects</h3>
+        </div>
+    </section>
 
-      <!-- Project 2 -->
-      <div class="project">
-        <h3>A webpage for Photographer</h3>
-        <p>Website for Photographer add photos to website, option to Download photos, fully responsive web
-        with good looking website with username and a Profile photo, and about something photographer 
-        link with icons which redirect to your insta account.</p>
-        <ul class="features">
-          <li>Fully Responsive Wepage ✔</li>
-          <li>Dark Mode for Eye comfort in Night ✔</li>
-          <li>Option to download Photos in one click ✔</li>
-          <li>Gallery with great features ✔</li>
-          <li>Multiple Pages ✔</li>
-          <li>Download page ✔</li>
-        </ul>
-        <p class="price">Rs.349</p>
-        <h2 class="buy-btn"><a class="buy-btn" href="https://wa.me/9565194075">Buy Project</a></h2>
-      </div>
+    <!-- Project Listing Section -->
+    <section class="projects">
+        <div class="project-card" data-category="web">
+            <img src="preview/web-development.png" alt="Project 1">
+            <h3>Responsive Portfolio Website</h3>
+            <p>A modern portfolio website built using HTML, CSS, and JavaScript.</p>
+            <button class="download">Free Download</button>
+        </div>
+        <div class="project-card" data-category="frontend">
+            <img src="preview/frontendSmallBanner.jpg" alt="Project 2">
+            <h3>JavaScript Quiz App</h3>
+            <p>A dynamic quiz application created with HTML, CSS, and JavaScript.</p>
+            <button class="purchase">Purchase - $3</button>
+        </div>
+        <div class="project-card" data-category="backend">
+            <img src="preview/spring-boot.png" alt="Project 3">
+            <h3>Spring Boot Student DBMS</h3>
+            <p>A backend API for an Student Dtaabase MAnagement System web application using Java, Spring Boot and MySQL H2 Database.</p>
+            <button class="purchase">Purchase - $5</button>
+        </div>
+    </section>
 
-      <div class="project">
-        <h3>A webpage for Cricket Tournament </h3>
-        <p>This website created for cricket tournament, Designed for both PC and Mobile devices it's  fully
-        responsive website with navbar buttons, show all about Who have registered and successfully joined, 
-        in front page show a Big banner about Everthing, and what's requirement in match while playing and
-        what's awards, Multiple Pages created for tournament, for semi-final and final create a good looking page
-        where show both team Captains Photo and all 11 players Photos under captain View Players, also have 
-         a page for help and contact us.</p>
-        <ul class="features">
-          <li>Fully Responsive Wepage ✔</li>
-          <li>Multiple Pages ✔</li>
-          <li>Front Page show all about info ✔</li>
-          <li>Special Pages for Semi-Final and Final Round ✔</li>
-          <li>All Teams will show in table format ✔</li>
-        </ul>
-        <p class="price">Rs.499</p>
-        <h2 class="buy-btn"><a class="buy-btn" href="https://wa.me/9565194075">Buy Project</a></h2>
-      </div>
+    <!-- Footer -->
+    <footer>
+        <p>Minior & Major Projects</p>
+    </footer>
 
-      <!-- Add more projects as needed -->
-    </div>
-  </div>
-</section>
-
-<!-- About Section -->
-<section id="about">
-  <div class="container">
-    <h2>About Us</h2>
-    <p> Don't underestimate the power of minor projects. They often lay the foundation for major successes."
-        "Major projects may grab headlines, but it's the attention to detail in minor projects that sets the stage for greatness."
-        "Every project, big or small, is an opportunity to learn, grow, and make a difference."</p>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <p>Get in touch with us for inquiries or support.</p>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <p>&copy; 2024 Minor Project ||  All rights reserved.</p>
-  </div>
-</footer>
-
-<!-- Script for mobile menu -->
-<script src="script.js"></script>
+    <script src="js/project.js"></script>
 </body>
 </html>
