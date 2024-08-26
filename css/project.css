@@ -9,7 +9,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  user-select: none;
 }
 
 /* Header Styling */
@@ -25,13 +24,7 @@ header {
 header .logo {
   font-size: 1.5em;
   font-weight: bold;
-  color: white;
-}
-header .logo a{
-  text-decoration: none;
-  color: white;
-  font-size: 1em;
-  font-weight: bold;
+  user-select: none;
 }
 
 header nav ul {
