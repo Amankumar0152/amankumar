@@ -57,7 +57,12 @@ h2 {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
+.underline-effect{
+    color: cornflowerblue;
+}
+.underline-effect:hover{
+    color: #11CC46;
+}
 footer {
     background: linear-gradient(to right, #0691db, #562ec4);
     color: white;
