@@ -61,10 +61,14 @@ body {
 }
 
 .footer-section {
-    background-color: #34495e;
+    background: linear-gradient(to right, #0691db, #562ec4);
     color: white;
     text-align: center;
     padding: 1rem;
+}
+.footer-section a{
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 /* Responsive Design */
