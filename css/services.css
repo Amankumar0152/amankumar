@@ -81,7 +81,7 @@ body {
     .nav-links {
         display: none;
         flex-direction: column;
-        background: linear-gradient(to right, #0691db, #562ec4);
+        background-color: #333;
         position: absolute;
         top: 60px;
         right: 0;
