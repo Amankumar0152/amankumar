@@ -5,6 +5,9 @@ body {
     color: #333;
     line-height: 1.6;
 }
+.logo{
+    font-size: 2em ;
+}
 
 /* Navbar */
 .navbar {
@@ -76,11 +79,14 @@ body {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: #3498db;
+        background: linear-gradient(to right, #0691db, #562ec4);
         position: absolute;
         top: 60px;
         right: 0;
         width: 100%;
+    }
+    .nav-links a{
+        padding: 20px;
     }
 
     .nav-links.active {
