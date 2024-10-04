@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="profiles/Aman.jpg">
+    <script src="https://kit.fontawesome.com/2917500283.js" crossorigin="anonymous"></script>
+    <meta name="author" content="Aman Kumar"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/underline-hover.css">
+    <title>Aman Kumar</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Personal Portfolio ">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.amankumar.cloud/">
+    <meta property="og:image" content="https://amankumar.cloud/pictures/hello-cat.jpg">
+    <meta property="og:description" content="Personal Portfolio Webpage, Click here to know more about me."> 
+    <meta property="fb:app_id" content="809218654498104">
+    <!-- Twitter Card Meta Tags (Optional) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Personal Portfolio">
+    <meta name="twitter:description" content="Personal Portfolio Webpage, Click here to know more about me.">
+    <meta name="twitter:image" content="https://amankumar.cloud/pictures/hello-cat.jpg">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dark{
+    background-color: #000;
+    color: white;
+}
+.light{
+    background-color: #fff;
+    color: #000;
+}
+.first{
+    color:#11CC46;
+}
+.and{
+    color:cornflowerblue;
+}
+.second{
+    color:#fb5283;
+}
+.third{
+    color:#ff469f;
+}
+.fourth{
+    color: #592ED1;
+}
+.learning{
+    color: lightseagreen;
+}
+.pages{
+    color: #9774C5;
+}
+.like{
+    color: #63E6BE;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right:8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    border-radius: 50%;
+    width:75px;
+    cursor: pointer;
+    margin: 30px;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    font: 14px;
+    font-weight: bold;
+    color: #487dd8;
+}
+nav ul li a:hover{
+    color:#11CC46;
+}
+.navbar h1 a{
+    text-decoration: none;
+    color: #487dd8;
+    font-size: 20px;
+}
+.navbar h1 a:hover{
+    color: #11CC46;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.about{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.about h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.about p{
+    font-size:16px ;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+.about h4{
+    margin: 30px 0;
+    font-size: 20px;
+}
+.about h4 a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color:cornflowerblue;
+}
+.about h4 a:hover{
+    color:#11CC46;
+}
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #487dd8, #a0e03f);
+    background: linear-gradient(to right, #0691db, #562ec4);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+button img{
+    width: 30px;
+    display: none;
+}
+button:hover img{
+    display: block;
+}
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+
+.about::after{
+    content: '';
+    width: 10px;
+    height: 478px;
+    background: linear-gradient(#0691db, #562ec4);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.sidebar{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar p small{
+    font-size: 13px;
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#0691db, #562ec4);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+.box img{
+    height:85% ;
+    width:90%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin: 0 22px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+  }
+  .project h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .project p{
+    text-align:start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 50px;
+  }
+ 
+  .footer a{
+    text-decoration: none;
+    padding-left: 10px;
+    margin: 10px;
+    text-align: center;
+    color:#487dd8;
+    font-size:20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+  .footer a:hover{
+    color: #11CC46;
+  }
+  .btn{
+    margin: 10px;
+  }
+@media only screen and (max-width:1080px){
+
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#0691db, #562ec4);
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        z-index: 2;
+        
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+        font-weight: bold;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    nav ul li a:hover{
+        color:#06038D;
+    }
+    .menu-icon{
+        width: 25px;
+        cursor: pointer;
+        display: none;
+    }
+    .menu-icon{
+        display:block;
+    }
+    .navbar h1 a{
+        position: absolute;
+        top:33px;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.2s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .sidebar{
+        flex-basis:100% ;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .color-box{
+        transform: translateX(75px);
+    }
+    .about{
+        flex-basis:100% ;
+    }
+    .about h2{
+        font-size: 20px;
+    }
+    .about h3{
+        font-size: 18px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="profiles/pirates.jpg" class="logo">
+                <h1><a href="connect.html">Aman Kumar</a></h1>
+                    <nav>
+                        <ul id="menuList">
+                            <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                            <li><a href="connect.html"><i class="fa-solid fa-circle-nodes"></i> Connect</a></li>
+                            <li><a href="project.html"><i class="fa-solid fa-share-nodes"></i> Projects</a></li>
+                            <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                        </ul>
+                    </nav>
+            <img src="icons/Menu64Green.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="about">
+                <h2>Hello my name is <span class="first">Aman</span> <span class="second">Kumar</span><br> <br>
+                    <h2><span style="color: green;">Nature Enthusiast |</span> <span style="color:orange">📸 Photographer |</span> 💻 <span style="color:#2767D1 ;">Aspiring Coder: </span> <span style="color: #B07219;">Java</span> <span style="color: #4015ce;">JDBC</span> <span style="color: #6DB33F;">Spring Boot</span> <span style="color: #1adc64;">Hibernate</span> <span style="color:orangered;">Postman API</span> <br>
+                        <span style="color: #59666C;">Free Time:</span>
+                <span class="learning">Learning</span>
+                <span class="and">and</span> 
+                <span class="fourth">Designing</span>
+                <span class="second">Web pages</span> look 
+                <span class="like">like </span>  
+                <span class="third">Professionals</span><br> <br> </h2>
+                <h3>Also i have Designed many websites You can visit here....</h3> <hr>
+                <h4><a class="underline-effect" href="https://www.crickhosting.online/" target="_blank">Crick Hosting Online <i class="fa-solid fa-up-right-from-square"></i></a></h4> <hr>
+                <h4><a class="underline-effect" href="https://www.livinglife.cloud/" target="_blank">Transforming Earth <i class="fa-solid fa-up-right-from-square"></i></a></h4> <hr> <br>
+            </div>
+            <div class="sidebar">
+                <div class="box">
+                <img src="pictures/hello-cat.jpg" class="side-image">
+                </div>
+                <!-- Background color box -->
+                <div class="color-box"></div>
+                </div>
+            </div>
+        </div>
+
+    <div class="project">
+        <h2><i class="fa-solid fa-diagram-project"></i> Project Showcase</h2>
+            <p>Explore my collection of web application projects, developed using Java, Spring Boot, JDBC, and SQL. These projects demonstrate key functionalities like data management (sending, fetching, updating, deleting), all of which are integral to modern web applications. Each project is designed to solve real-world problems and showcase my skills in backend development.</p>
+            
+    </div>
+    <div class="footer"><a href="connect.html"> <i class="fa-brands fa-github"></i></a></div>
+    <button class="btn">Dark Theme <i class="fa-solid fa-sun"></i></button>
+
+    <script src="js/menu.js"></script>
+    <script src="js/darkmode.js"></script>
+
+</body>
+</html>

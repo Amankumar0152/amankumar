@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Kumar</title>
     <link rel="icon" href="profiles/Aman.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="theme-color" content="#ff4757">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2917500283.js" crossorigin="anonymous"></script>
-    <meta name="author" content="Aman Kumar"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/underline-hover.css">
-    <title>Aman-Kumar</title>
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Personal Portfolio ">
     <meta property="og:type" content="website">
@@ -25,57 +24,83 @@
     <meta name="twitter:title" content="Personal Portfolio">
     <meta name="twitter:description" content="Personal Portfolio Webpage, Click here to know more about me.">
     <meta name="twitter:image" content="https://amankumar.cloud/pictures/hello-cat.jpg">
+    
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <img src="profiles/pirates.jpg" class="logo">
-                <h1><a href="connect.html">Aman Kumar</a></h1>
-                    <nav>
-                        <ul id="menuList">
-                            <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-                            <li><a href="connect.html"><i class="fa-solid fa-circle-nodes"></i> Connect</a></li>
-                            <li><a href="project.html"><i class="fa-solid fa-share-nodes"></i> Projects</a></li>
-                            <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
-                        </ul>
-                    </nav>
-            <img src="icons/Menu64Green.png" class="menu-icon" onclick="togglemenu()">
-        </div>
-        <div class="row">
-            <div class="about">
-                <h2>Hello my name is <span class="first">Aman</span> <span class="second">Kumar</span><br> <br>
-                    <h2><span style="color: green;">Nature Enthusiast |</span> <span style="color:orange">📸 Photographer |</span> 💻 <span style="color:#2767D1 ;">Aspiring Coder: </span> <span style="color: #B07219;">Java</span> <span style="color: #4015ce;">JDBC</span> <span style="color: #6DB33F;">Spring Boot</span> <span style="color: #1adc64;">Hibernate</span> <span style="color:orangered;">Postman API</span> <br>
-                        <span style="color: #59666C;">Free Time:</span>
-                <span class="learning">Learning</span>
-                <span class="and">and</span> 
-                <span class="fourth">Designing</span>
-                <span class="second">Web pages</span> look 
-                <span class="like">like </span>  
-                <span class="third">Professionals</span><br> <br> </h2>
-                <h3>Also i have Designed many websites You can visit here....</h3> <hr>
-                <h4><a class="underline-effect" href="https://www.crickhosting.online/" target="_blank">Crick Hosting Online <i class="fa-solid fa-up-right-from-square"></i></a></h4> <hr>
-                <h4><a class="underline-effect" href="https://www.livinglife.cloud/" target="_blank">Transforming Earth <i class="fa-solid fa-up-right-from-square"></i></a></h4> <hr> <br>
-            </div>
-            <div class="sidebar">
-                <div class="box">
-                <img src="pictures/hello-cat.jpg" class="side-image">
-                </div>
-                <!-- Background color box -->
-                <div class="color-box"></div>
-                </div>
-            </div>
-        </div>
 
-    <div class="project">
-        <h2><i class="fa-solid fa-diagram-project"></i> Project Showcase</h2>
-            <p>Explore my collection of web application projects, developed using Java, Spring Boot, JDBC, and SQL. These projects demonstrate key functionalities like data management (sending, fetching, updating, deleting), all of which are integral to modern web applications. Each project is designed to solve real-world problems and showcase my skills in backend development.</p>
-            
+<!-- Navbar -->
+<nav class="navbar">
+    <a href="about.html">About</a>
+    <a href="#skills">Skills</a>
+    <a href="project.html">Projects</a>
+    <a href="connect.html">Connect</a>
+</nav>
+
+<!-- Profile Section -->
+<section class="profile-section">
+    <img src="profiles/pirates.jpg" alt="Aman Kumar">
+    <h1>Aman Kumar</h1>
+</section>
+
+<!-- About Section -->
+<section class="section" id="about">
+    <div class="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm <span style="color: #ee8f00;">Aman</span> <span style="color: #FB5283;">Kumar</span> <span style="color: rgb(5, 187, 5);">Nature Enthusiast |</span> <span style="color:lightslategray">Photographer | <br></span> <span style="color:#2767D1 ;">Coder: </span> <span style="color: #F7D720;">Java</span> <span style="color: #9b0f9b;">JDBC</span> <span style="color: #6DB33F;">Spring Boot</span> <span style="color: #5e6769;">Hibernate</span> <span style="color:#FF6C37;">Postman API</span></p>
     </div>
-    <div class="footer"><a href="connect.html"> <i class="fa-brands fa-github"></i></a></div>
-    <button class="btn">Dark Theme <i class="fa-solid fa-sun"></i></button>
+</section>
 
-    <script src="js/menu.js"></script>
-    <script src="js/darkmode.js"></script>
+<!-- Skills Section -->
+<section class="section" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div>
+            <h3>Front-End</h3>
+            <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div>
+            <h3>Back-End</h3>
+            <p>Java, Spring Boot, MySQL, APIs</p>
+        </div>
+        <div>
+            <h3>Tools</h3>
+            <p>Git, Postman, VS Code, IntelliJ IDEA, Eclipse</p>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="section" id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div>
+            <h3>Crick Hosting Online</h3>
+            <p>Platform for live cricket tournament hosting.</p>
+            <a href="https://crickhosting.online" target="_blank">Visit</a>
+        </div>
+        <div>
+            <h3>Transforming Earth</h3>
+            <p>Raising environmental awareness and tree-planting projects.</p>
+            <a href="https://transformingearth.vercel.app/" target="_blank">Visit</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:aman@example.com">amanghostvilla@gmail.com</a></p>
+    <img src="pictures/hello-cat.jpg" alt="Contact Image">
+</section>
+
+<!-- Dark Mode Toggle -->
+<button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Theme</button>
+
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+</script>
 
 </body>
 </html>
