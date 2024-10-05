@@ -98,10 +98,13 @@ body {
     color: #fff;
     padding: 2px 20px;
     text-decoration: none;
-    background-color: #2a5298;
+    background-color: cornflowerblue;
     border-radius: 5px;
     margin-left: 10px;
     transition: background-color 0.3s;
+}
+.projects a:hover{
+    background-color: #2a5298;
 }
 .footer {
     text-align: center;
@@ -117,8 +120,9 @@ body {
     text-align: center;
 }
 .contact p a{
+    font-weight: bold;
     text-decoration: none;
-    color:#ff4757;
+    color: rgb(132, 198, 0);
 }
 .contact img {
     width: 45%;
