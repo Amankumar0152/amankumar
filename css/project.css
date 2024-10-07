@@ -135,6 +135,10 @@ header nav ul li a:hover {
 .project-card button:hover {
   background: #6556ED;
 }
+.project-card button a{
+  text-decoration: none;
+  color: white;
+}
 
 /* Footer Styling */
 footer {
