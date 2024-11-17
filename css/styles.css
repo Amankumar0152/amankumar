@@ -197,3 +197,11 @@ body {
         justify-content: center;
     }
 }
+@media (max-width: 300px){
+    .navbar a {
+        padding: 8px 6px;
+        margin-left: 0;
+        margin-bottom: 5px;
+        justify-content: center;
+    }
+}
