@@ -12,10 +12,10 @@ body {
 }
 
 .hero-section {
-    /* background: linear-gradient(to right, #8043E8, #044481, #a0e03f); */
-    /* color: white; */
     padding: 2rem;
     text-align: center;
+    font-family: cursive;
+    font-weight: bold;
 }
 
 .services-section {
