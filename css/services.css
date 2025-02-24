@@ -11,16 +11,9 @@ body {
     font-weight: bold;
 }
 
-.bar {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    margin: 5px;
-}
-
 .hero-section {
-    background: linear-gradient(to right, #8043E8, #044481, #a0e03f);
-    color: white;
+    /* background: linear-gradient(to right, #8043E8, #044481, #a0e03f); */
+    /* color: white; */
     padding: 2rem;
     text-align: center;
 }
