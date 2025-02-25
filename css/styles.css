@@ -155,14 +155,14 @@ body {
 }
 @media (max-width: 768px) {
     .navbar {
-        /* display: flex; */
+        display: flex;
         align-items: center;
         list-style: none;
         display: inline-block;
     }
     .navbar a {
-        padding: 8px 15px;
-        margin-left: 0;
+        padding: 8px;
+        margin-left: 8px;
         margin-bottom: 5px;
         justify-content: center;
     }
@@ -183,23 +183,7 @@ body {
 }
 @media (max-width: 390px){
     .navbar a {
-        padding: 8px 10px;
-        margin-left: 0;
-        margin-bottom: 5px;
-        justify-content: center;
-    }
-}
-@media (max-width: 350px){
-    .navbar a {
-        padding: 8px 6px;
-        margin-left: 0;
-        margin-bottom: 5px;
-        justify-content: center;
-    }
-}
-@media (max-width: 300px){
-    .navbar a {
-        padding: 8px 5px;
+        padding: 8px;
         margin-left: 0;
         margin-bottom: 5px;
         justify-content: center;
